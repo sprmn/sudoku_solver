@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+project(sudoku)
+add_library(sudoku src/sudoku.cc)
+add_executable(sudoku_solver src/main.cc)
+target_link_libraries(sudoku_solver sudoku)
