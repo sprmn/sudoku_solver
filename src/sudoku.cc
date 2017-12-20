@@ -80,10 +80,10 @@ char *Sudoku::Solve() {
         if (solution) {
           // return solution
           memcpy(sudoku_, solution, 81);
-          delete[] child;
+          delete child;
           return sudoku_;
         } else {
-          delete[] child;
+          delete child;
         }
       }    }
     return NULL;
