@@ -14,6 +14,6 @@ int main(int argc, char *argv[]) {
   } else {
     printf("No solution found!\n");
   }
-  delete[] s;
+  delete s;
   return 0;
 }
